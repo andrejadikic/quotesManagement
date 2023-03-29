@@ -34,7 +34,7 @@ public class SecondaryThread implements Runnable{
         try {
             String s = in.readLine();
             System.out.println(s);
-            if(!s.equals("GET /citat-dana HTTP/1.1")){
+            if(!s.equals("GET /quote-of-the-day HTTP/1.1")){
                 out.println("Invalid request");
             }
             else{
